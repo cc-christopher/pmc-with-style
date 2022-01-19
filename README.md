@@ -1,4 +1,4 @@
-# Berkas Tugas Pemechaan Masalah dengan C
+# Berkas Tugas Pemecahan Masalah dengan C
 Christopher Chandra - 18320033
 Teknik Biomedis 2020
 _________________________________________
