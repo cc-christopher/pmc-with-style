@@ -1,0 +1,14 @@
+Result: Memunculkan Graph n × n Ke Layar
+procedure printgraph(n, graph[n][n])
+while i ≤ n − 1 do
+	j ← 0;
+	while j ≤ n − 1 do
+		if graph[i][j] = int max then
+			output (−1);
+		else
+			output (graph[i][j]);
+		end
+		j ← j + 1;
+	end
+	i ← i + 1;
+end

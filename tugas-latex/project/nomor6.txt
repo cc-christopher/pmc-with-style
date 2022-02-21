@@ -1,0 +1,22 @@
+Result: Result: Mencari indeks yang akan diproses dengan algoritma Dijkstra
+Initialization:
+is found ← FALSE;
+i ← 0;
+Algorithm:
+while i ≤ n − 1 do
+	j ← 0;
+	if !is f inal[i] and !is found then
+		idx min ← i;
+		val minimum ← jarak f[i];
+		is found ← true;
+	end
+	if is found and !is f inal[i] and (jarak f[i] < val minimum) then
+		idx min ← i;
+		val minimum ← jarak f[i];
+	end
+end
+if is found then
+	return (idx min)
+else
+	return (int max)
+end

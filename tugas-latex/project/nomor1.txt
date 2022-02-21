@@ -1,0 +1,22 @@
+Result: Find the shortest path from a to z
+procedure Dijkstra(G: weighted connected simple graph, with all weights positive)
+{G has vertices a = v0, v1, ..., vn = z and lengths w(vi, vj ) where w(vi, vj ) = ∞ if vi, vj is not an edge in G}
+
+
+for i := 1 to n do
+	L(vi) := ∞
+end
+L(a) := 0
+S := ∅
+{the labels are now initialized so that the label of a is 0 and all other labels are ∞, and S is the empty set}
+while z /∈ S do
+	u := a vertex not in S with L(u) minimal
+	S := S ∪ {u}
+	for all vertices v not in S do
+		if L(u) + w(u, v) < L(v) then
+			L(v) := L(u) + w(u, v)
+			{this adds a vertex to S with minimal label and updates the labels of vertices not in S}
+		end
+	end
+end
+return L(z) = length of a shortest path from a to z
